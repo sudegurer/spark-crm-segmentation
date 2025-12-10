@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  jupyter-spark:
+    image: jupyter/pyspark-notebook:latest
+    container_name: jupyter-pyspark
+    ports:
+      - "8888:8888" # Jupyter Notebook erişimi
+      - "4040:4040" # Spark UI erişimi
+    volumes:
+      - ./data:/home/jovyan/data # Veri klasörünü bağlama
+    environment:
+      JUPYTER_ENABLE_LAB: "yes" # Jupyter Lab'ı etkinleştir
