@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-# 500.000 satırlık veri oluşturuyoruz (Büyük Veri hissi için)
+# 500.000 satırlık veri oluşturuyoruz 
 NUM_RECORDS = 500000
 OUTPUT_DIR = 'data'
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'crm_data.csv')
